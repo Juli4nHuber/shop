@@ -1,0 +1,15 @@
+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 74px;
+    a{
+        height: min-content;
+        color: darkslategray;
+        &.active{
+            color: #fe724c;
+        }
+            
+    }
+}
+
