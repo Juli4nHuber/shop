@@ -8,11 +8,7 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 
 export const routes: Routes = [
 {
-    path: '',
-    component: HomeComponent
-},
-{
-    path: 'buscar',
+    path: 'Home',
     component: BuscarComponent
 },
 {
@@ -21,14 +17,21 @@ export const routes: Routes = [
 },
 {
     path: 'favoritos',
+    title: 'Favoritos',
     component: FavoritosComponent
 },
 {
     path: 'perfil',
+    title: 'Perfil',
     component: PerfilComponent
 },
 {
     path: 'carrito',
+    title: 'Carrito',
     component: CarritoComponent
-}
+},
+{
+    path: 'home',
+    component: HomeComponent
+},
 ];

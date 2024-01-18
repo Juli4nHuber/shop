@@ -1,5 +1,10 @@
 div{
     display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
     justify-content: space-around;
     align-items: center;
     height: 74px;
