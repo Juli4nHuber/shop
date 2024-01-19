@@ -7,8 +7,14 @@ import { Producto } from '../interfaces/producto';
 export class ApiShopService {
   constructor() {}
 
-  async getProductos(){
+  async getProductos() : Promise<Producto[]>{
     let response = await fetch("https://fakestoreapi.com/products");
     return await response.json();
   }
+
+  async getProducto(id: number): Promise<Producto>{
+    let response = await fetch(`https://fakestoreapi.com/products/${id}`);
+    return await response.json();
+  }
+
 }

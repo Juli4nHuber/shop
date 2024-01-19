@@ -1,1 +1,17 @@
-<p>articulo works!</p>
+<header>
+    <h1>{{producto?.title}}</h1>
+    <div>
+        <fa-icon [icon]="fullStar" size="xs"></fa-icon>
+        <fa-icon [icon]="fullStar" size="xs"></fa-icon>
+        <fa-icon [icon]="fullStar" size="xs"></fa-icon>
+        <fa-icon [icon]="halfStar" size="xs"></fa-icon>
+        <fa-icon [icon]="emptyStar" size="xs"></fa-icon>
+        <span>({{producto?.rating?.count}})</span>
+    </div>
+</header>
+<img src="{{producto?.image}}"/>
+<hr>
+<section>
+    <span>$ {{producto?.price}}</span><br/>
+    <span>{{producto?.description}}</span><br/>
+</section>  

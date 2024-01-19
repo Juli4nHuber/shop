@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiShopService } from '../../services/api-shop.service';
 import { Producto } from '../../interfaces/producto';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
